@@ -22,7 +22,7 @@ const Invite = () => {
     // Fetch invite data from the API
     const fetchInviteData = async () => {
       try {
-        const response = await fetch(`https://bern-db.onrender.com/api/ton-diamond/user/${username}`);
+        const response = await fetch(`https://bern-db.onrender.com/api/Cluster0/user/${username}`);
         const data = await response.json();
         if (response.ok) {
           setInviteData(data);

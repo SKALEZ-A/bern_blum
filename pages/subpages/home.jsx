@@ -27,7 +27,7 @@ const Welcome = () => {
                 console.log("User data fetched from Telegram:", user);
                 if (user) {
                     setUsername(user.username || "Anon");
-                    const response = await fetch(`https://bern-db.onrender.com/api/ton-diamond/user/${user.username}`);
+                    const response = await fetch(`https://bern-db.onrender.com/api/Cluster0/user/${user.username}`);
                     const data = await response.json();
                     if (response.ok) {
                         setScore(data.score);

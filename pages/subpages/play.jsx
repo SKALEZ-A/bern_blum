@@ -84,7 +84,7 @@ const Play = () => {
 
     const endGame = async (finalScore) => {
         try {
-            const response = await fetch('https://bern-db.onrender.com/api/ton-diamond/update-score', {
+            const response = await fetch('https://bern-db.onrender.com/api/Cluster0/update-score', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
